@@ -55,11 +55,29 @@ aside {
 }
 
 main {
-    margin-top: 25px;
-    margin-left: 200px; /* width of the sidebar + some margin */
+    margin-top: 100px;
+    margin-left: 350px; /* width of the sidebar + some margin */
     margin-bottom: 100px;
-    padding: 25px;
+    padding: 30px;
 }
+
+.carousel-image {
+    width: auto; /* Remove fixed width */
+    height: 200px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image covers the entire space */
+}
+
+.card {
+    height: 100%; /* Ensure the card takes up full height */
+}
+
+.card-body {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
 
 footer {
     position: fixed;
@@ -75,6 +93,19 @@ footer {
     margin: auto 0;
     padding: 10px;
 }
+
+.text{
+    text-align: left;
+    margin-top: 7rem;
+}
+
+.text h1{
+    margin-left: 33%;
+}
+
+
+
+
 
 
 
