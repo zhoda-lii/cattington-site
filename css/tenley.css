@@ -8,35 +8,16 @@ header {
 
 aside {
     position: fixed;
-    width: 200px;
+    width: 250px;
     top: 50px; /* Apx height of the header */
     bottom: 0;
     left: 0;
-    background-color: #778899;
+    background-color: #D9A7A3;
     color: #fff;
     padding: 20px;
     z-index: 0; /* Put sidebar at the back */
     overflow-y: auto;
     padding-bottom: 120px;
-}
-
-.internal-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.internal-nav ul li {
-    margin-bottom: 10px;
-}
-
-.internal-nav ul li a {
-    text-decoration: none;
-    /* color: #333; */
-    color: #fff;
-}
-
-.internal-nav ul li a:hover {
-    color: #000;
 }
 
 .bg-max {
@@ -55,36 +36,14 @@ aside {
 }
 
 main {
-    margin-top: 100px;
-    margin-left: 350px; /* width of the sidebar + some margin */
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-left: 150px; /* width of the sidebar + some margin */
+    margin-bottom: 50px;
     padding: 30px;
 }
 
-.carousel-image {
-    width: auto; /* Remove fixed width */
-    height: 200px; /* Adjust this value as needed */
-    object-fit: cover; /* Ensures the image covers the entire space */
-}
-
-.card {
-    height: 100%; /* Ensure the card takes up full height */
-}
-
-.card-body {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
-
-
-
 footer {
     position: fixed;
-    /* Saddle Brown */
-    background-color: #8B4513;
-    /* Dark Red */
-    /* background-color: #8B0000; */
     color: #fff;
     /* height: 50px; */
     bottom: 0;
@@ -94,13 +53,23 @@ footer {
     padding: 10px;
 }
 
-.text{
-    text-align: left;
-    margin-top: 7rem;
+h1{
+    text-align: center;
 }
 
-.text h1{
-    margin-left: 33%;
+#text{
+    text-align: center;
+    padding-top: 7rem;
+}
+
+p{
+    text-align: left;
+    margin-right: 80px;
+    padding-top: 4rem;
+}
+
+body{
+    background-color: #F2E4DA !important;
 }
 
 
