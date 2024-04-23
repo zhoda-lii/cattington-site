@@ -1,18 +1,28 @@
 html {
+    background-image: url("../images/0_Main/mainbg.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     scroll-padding-top: 70px;
+}
+
+body {
+    background-color: rgba(77, 88, 99, 0.9) !important;
 }
 
 header {
     height: 50px;
 }
 
+
+/* Sidebar CSS */
 aside {
     position: fixed;
     width: 200px;
     top: 50px; /* Apx height of the header */
     bottom: 0;
     left: 0;
-    background-color: #778899;
     color: #fff;
     padding: 20px;
     z-index: 0; /* Put sidebar at the back */
@@ -31,7 +41,6 @@ aside {
 
 .internal-nav ul li a {
     text-decoration: none;
-    /* color: #333; */
     color: #fff;
 }
 
@@ -43,18 +52,27 @@ aside {
     padding: 0px;
 }
 
+#votingResults span {
+    font-size: 20px;
+    margin: 5px;
+}
+
 #votingResultsHead {
     margin-bottom: 8px;
 }
 
-.bg-max {
-    /* Dark Red */
-    background-color: #8B0000;
+
+/* Main Content CSS */
+main {
+    margin-top: 25px;
+    margin-left: 200px; /* width of the sidebar + some margin */
+    margin-bottom: 42px;
+    padding: 25px;
+    color: #fff;
 }
 
-.bg-ten {
-    /* Saddle Brown */
-    background-color: #8B4513;
+.text-lyellow {
+    color: rgb(255, 255, 135) !important;
 }
 
 .bg-mon {
@@ -62,22 +80,25 @@ aside {
     background-color: #8B008B;
 }
 
-
-main {
-    margin-top: 25px;
-    margin-left: 200px; /* width of the sidebar + some margin */
-    margin-bottom: 100px;
-    padding: 25px;
-}
-
-footer {
-    position: fixed;
+.bg-ten {
     /* Saddle Brown */
     background-color: #8B4513;
+}
+
+.bg-max {
     /* Dark Red */
-    /* background-color: #8B0000; */
+    background-color: #8B0000;
+}
+
+figcaption {
+    font-size: 20px !important;
+}
+
+
+/* Footer CSS */
+footer {
+    position: fixed;
     color: #fff;
-    /* height: 50px; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -85,13 +106,30 @@ footer {
     padding: 10px;
 }
 
+.bg-roc {
+    /* Light Slate Grey */
+    background-color: #778899;
+}
 
 
+/* Media Queries */
 @media screen and (max-width: 415px) {
     aside {
-        width: 150px;
+        width: 45vw;
+        font-size: small;
+    }
+    aside .text-lyellow {
+        font-size: medium;
     }
     main {
-        margin-left: 150px;
+        margin-left: 45vw;
+        margin-bottom: 90px;
+    }
+    #votingResults span {
+        font-size: 18px;
+    }
+    #votingResultsHead div {
+        padding-left: 12px;
+        padding-right: 0px;
     }
 }

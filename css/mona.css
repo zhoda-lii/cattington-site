@@ -1,52 +1,95 @@
 html {
+    background-image: url("../images/3_Mona/monabg2.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     scroll-padding-top: 70px;
+    height: 100%;
+}
+
+body {
+    background-color: rgba(179, 143, 161, 0) !important;
 }
 
 header {
     height: 50px;
 }
 
+
+/* Sidebar CSS */
 aside {
     position: fixed;
-    width: 200px;
+    width: 250px;
+    padding: 20px;
+    padding-bottom: 120px;
     top: 50px; /* Apx height of the header */
     bottom: 0;
     left: 0;
-    background-color: #778899;
     color: #fff;
-    padding: 20px;
     z-index: 0; /* Put sidebar at the back */
     overflow-y: auto;
-    padding-bottom: 120px;
 }
 
-.internal-nav ul {
-    list-style: none;
-    padding: 0;
+.bg-mon-side {
+    background-color: #a990da;
 }
 
-.internal-nav ul li {
+
+/* Main Content CSS */
+main {
+    margin-top: 25px;    /* height of the header + some margin */
+    margin-left: 250px;  /* width of the sidebar + some margin */
+    margin-bottom: 42px; /* height of the footer + some margin */
+    padding: 25px;
+    color: #fff;
+    /* height: 100vh; */
+}
+
+.bg-mon-t {
+    /* Dark Magenta */
+    background-color:  rgba(139, 0, 139, 0.6);
+}
+
+.text-lyellow {
+    color: rgb(255, 255, 135) !important;
+}
+
+.main-title {
+    text-shadow: 0px 1px 5px rgba(0,0,0,0.75);
+}
+
+.bg-mon-txt {
+    background-color:  rgba(158, 153, 134, 0.6);
+    text-shadow: 0px 1px 5px rgba(0,0,0,0.75);
     margin-bottom: 10px;
 }
 
-.internal-nav ul li a {
-    text-decoration: none;
-    /* color: #333; */
+.carousel-caption {
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.75);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    /* Ensures carousel indicators below footer */
+    z-index: 0 !important;
+}
+
+.carousel-indicators {
+    /* Ensures indicators below footer and above carousel */
+    z-index: 1 !important;
+}
+
+
+/* Footer CSS */
+footer {
+    position: fixed;
     color: #fff;
-}
-
-.internal-nav ul li a:hover {
-    color: #000;
-}
-
-.bg-max {
-    /* Dark Red */
-    background-color: #8B0000;
-}
-
-.bg-ten {
-    /* Saddle Brown */
-    background-color: #8B4513;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto 0;
+    padding: 10px;
+    z-index: 2 !important;
 }
 
 .bg-mon {
@@ -54,35 +97,30 @@ aside {
     background-color: #8B008B;
 }
 
-main {
-    margin-top: 25px;
-    margin-left: 200px; /* width of the sidebar + some margin */
-    margin-bottom: 100px;
-    padding: 25px;
-}
 
-footer {
-    position: fixed;
-    /* Saddle Brown */
-    background-color: #8B4513;
-    /* Dark Red */
-    /* background-color: #8B0000; */
-    color: #fff;
-    /* height: 50px; */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin: auto 0;
-    padding: 10px;
-}
-
-
-
-@media screen and (max-width: 415px) {
+/* Media Queries */
+@media screen and (max-width: 500px) {
     aside {
-        width: 150px;
+        width: 45vw;
+        font-size: small;
+    }
+    aside .text-secondary {
+        font-size: small;
+    }
+    aside .text-danger {
+        font-size: medium;
     }
     main {
-        margin-left: 150px;
+        margin-left: 45vw;
+        margin-bottom: 95px;
+    }
+    .main-title {
+        font-size: large !important;
+    }
+    .sub-title {
+        font-size: medium !important;
+    }
+    .article-txt {
+        font-size: small !important;
     }
 }

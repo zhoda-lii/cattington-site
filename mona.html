@@ -3,8 +3,8 @@
 
     <head>
         <title>Mona Biography | Travis & His Cats</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <!-- Favico -->
         <link rel="icon" type="image/x-icon" href="./images/favico.png">
         <!-- External CSS -->
@@ -32,7 +32,6 @@
                     <!-- Nav Items -->
                     <div class="collapse navbar-collapse" id="navbarItems">
                         <ul class="navbar-nav">
-                            <!-- <li class="nav-item"><a class="nav-link active" href="#">Travis and his Cats</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="./maxwell.html">Maxwell</a></li>
                             <li class="nav-item"><a class="nav-link" href="./tenley.html">Tenley</a></li>
                             <li class="nav-item"><a class="nav-link active" href="#">Mona</a></li>
@@ -42,42 +41,166 @@
             </nav>
         </header>
 
-        <!-- Internal Navigation and Images -->
-        <aside class="sidebar">
-            <!-- Internal Navigation -->
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <b>Internal Links if any:</b>
+        <!-- Card Images -->
+        <aside class="bg-mon-side">
+            <div class="container-fluid">
+                <!-- Images (Bootstrap Cards) -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- Card 1: An image cap, a title, and body text -->
+                        <div class="card text-center">
+                            <img src="./images/3_Mona/mona5.jpg" alt="Purr-fect Techie" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title h5 text-danger">
+                                    Purr-fect Techie
+                                </p>
+                                <p class="card-text text-secondary">
+                                    Mona, the tech-savvy cat, will claim your CPU as her throne, adding a touch of purr-sonality to your desk!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- Card 2: An image cap, a heading, and a list group -->
+                        <div class="card text-center">
+                            <img src="./images/3_Mona/mona11.jpg" alt="Fur-nado Cat" class="card-img-top">
+                            <p class="card-header h5 text-danger">
+                                Fur-nado Cat
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-secondary">Mona sheds fur like confetti!</li>
+                                <li class="list-group-item text-secondary">Prepare for a furry cuddle and a lint roller party!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- Card 3: A heading, some body text, and an image footer -->
+                        <div class="card text-center">
+                            <p class="card-header h5 text-danger">
+                                Box Boss Kitty
+                            </p>
+                            <div class="card-body">
+                                <p class="card-text text-secondary">
+                                    Mona is on a mission: to conquer the shoe box and transform it into the ultimate cat fortress!
+                                </p>
+                            </div>
+                            <img src="./images/3_Mona/mona8.jpg" alt="Box Boss Kitty" class="card-img-bottom">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <nav class="internal-nav">
-                <ul>
-                    <li><a href="#article-1">Sample1</a></li>
-                    <li><a href="#article-2">Sample2</a></li>
-                    <li><a href="#article-3">Sample3</a></li>
-                </ul>
-            </nav>
-            <hr>
-            <!-- Images (Bootstrap Cards) -->
-
         </aside>
 
         <!-- Main Content -->
         <main>
-            <!-- Cat Biography and Bootstrap Carousel  -->
+            <div class="container-fluid">
+                <div class="p-3 bg-mon-t text-white rounded">
+                    <h1 class="text-lyellow main-title">
+                        Mysterious Mona &#128701;
+                    </h1>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <!-- Mona's Biography -->
+                        <article>
+                            <div class="p-3 bg-mon-txt rounded">
+                                <h2 class="sub-title">Biography</h2>
+                                <br>
+                                <p class="article-txt">
+                                    Mona is my sweet little weirdo - she is about 6 years old now. At first glance, she seems
+                                    like a tough cat to love: always on edge, anxious, shy, and seems to not like being touched.
+                                    But she just takes some time to warm up, and once she does, she will jump up on your desk
+                                    and rub against you for hours, not leaving until you give her just the right amount of
+                                    attention.
+                                </p>
+                                <p class="article-txt">
+                                    She is extremely talkative, always meowing wherever she goes. She's also a bit of a brat
+                                    when it comes to the litter box - imagine not flushing the toilet, that's her! Her name is
+                                    actually based on the cat Morgana from Persona 5, a game my girlfriend at the time and I
+                                    were playing together. It was her idea to name Mona, and it stuck!
+                                </p>
+                                <p class="article-txt">
+                                    Despite her being a bit of a brat, she's always been there for me, and I look forward to
+                                    having her be a little pest for the years to come!
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <!-- Bootstrap Carousel -->
+                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                <img src="./images/3_Mona/mona1.jpg" class="d-block w-100" alt="Mona's Belly Peek">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Mona's Belly Peek</h5>
+                                    <p>
+                                        Mona lounges on the floor, arms up, feet sideways, and just a hint of belly showing, inviting you to join her in relaxation.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="carousel-item">
+                                <img src="./images/3_Mona/mona2.jpg" class="d-block w-100" alt="Mona's Purr-fect Ponder">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Mona's Purr-fect Ponder</h5>
+                                    <p>
+                                        Mona covers her face, her eyes looking serious as she ponders the mysteries of cat dreams.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="carousel-item">
+                                <img src="./images/3_Mona/mona3.jpg" class="d-block w-100" alt="Mona's Sleepy Serenity">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Mona's Sleepy Serenity</h5>
+                                    <p>
+                                        Mona rests, her eyes beginning to close in peaceful serenity, as she sinks deeper into her cozy spot.
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
         </main>
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    Images supplied by: Travis Cattington
-                </div>
-                <div class="col-md-4 text-center">
-                    Page made by: Joash Daligcon
-                </div>
-                <div class="col-md-4 text-center">
-                    © 2024 Travis & His Cats
+        <footer class="bg-mon">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        Images supplied by: Travis Cattington
+                    </div>
+                    <div class="col-md-4 text-center">
+                        Page made by: Joash Daligcon
+                    </div>
+                    <div class="col-md-4 text-center">
+                        © 2024 Travis & His Cats
+                    </div>
                 </div>
             </div>
         </footer>
@@ -89,8 +212,9 @@
             crossorigin="anonymous"></script>
 
         <script>
-            // const myCarouselElement = document.querySelector('#myCarousel');
-            // const carousel = new bootstrap.Carousel(myCarouselElement, {});
+            // Bootstrap Carousel
+            const myCarouselElement = document.querySelector('#myCarousel');
+            const carousel = new bootstrap.Carousel(myCarouselElement, {});
         </script>
     </body>
 

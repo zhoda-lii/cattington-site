@@ -9,16 +9,43 @@ header {
 aside {
     position: fixed;
     width: 200px;
-    top: 50px; /* Apx height of the header */
+    top: 50px;
+    /* Apx height of the header */
     bottom: 0;
     left: 0;
-    background-color: #778899;
+    background-color: #418b24;
     color: #fff;
     padding: 20px;
-    z-index: 0; /* Put sidebar at the back */
+    z-index: 0;
+    /* Put sidebar at the back */
     overflow-y: auto;
     padding-bottom: 120px;
 }
+
+body {
+    background-color: #f9dd9c !important;
+}
+
+.para {
+    color: #1a4734;
+}
+
+.abouth1 {
+    color: #1a4734;
+}
+
+.card-body {
+    background-color: #1a4734 !important;
+}
+
+.card-text {
+    color: white;
+}
+
+/* .card-title {
+    color: white;
+} */
+
 
 .internal-nav ul {
     list-style: none;
@@ -56,17 +83,14 @@ aside {
 
 main {
     margin-top: 25px;
-    margin-left: 200px; /* width of the sidebar + some margin */
+    margin-left: 200px;
+    /* width of the sidebar + some margin */
     margin-bottom: 100px;
     padding: 25px;
 }
 
 footer {
     position: fixed;
-    /* Saddle Brown */
-    background-color: #8B4513;
-    /* Dark Red */
-    /* background-color: #8B0000; */
     color: #fff;
     /* height: 50px; */
     bottom: 0;
@@ -82,6 +106,7 @@ footer {
     aside {
         width: 150px;
     }
+
     main {
         margin-left: 150px;
     }
