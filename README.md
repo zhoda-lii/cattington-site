@@ -1,6 +1,6 @@
 # 😺📖 Travis & His Cats: Blog Posts and Biographies
 
-A website made just for Travis' family of cats. 
+A website made just for Travis' family of cats.  
 Images supplied by: Travis Cattington
 
 ## Authors
