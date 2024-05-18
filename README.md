@@ -5,13 +5,13 @@ Images supplied by: Travis Cattington
 
 ## Authors
 
-- Aron Limos
-- Lance Mirano
-- Joash Daligcon
+- AronLimos
+- kianaaxd
+- zhoda-lii
 
 ## Contributions
 
-1. Main Landing Page (by Joash Daligcon)
-2. Maxwell Page (by Aron Limos)
-3. Tenley Page (by Lance Mirano)
-4. Mona Page (by Joash Daligcon)
+1. Main Landing Page (by zhoda-lii)
+2. Maxwell Page (by AronLimos)
+3. Tenley Page (by kianaaxd)
+4. Mona Page (by zhoda-lii)
